@@ -439,7 +439,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <div className="text-2xl font-bold text-white mb-4">J2Systems</div>
+              <Logo width={180} height={50} className="mb-4 brightness-0 invert opacity-80" />
               <p className="text-gray-400">
                 Integración de sistemas y desarrollo de soluciones empresariales en Ecuador.
               </p>
@@ -462,7 +462,7 @@ const Home = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <MessageSquare className="w-4 h-4" />
-                  WhatsApp: +593 99 999 9999
+                  WhatsApp: +593 997 154 016
                 </li>
               </ul>
             </div>
