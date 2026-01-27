@@ -42,7 +42,7 @@ const Home = () => {
     setFormData({ name: '', email: '', company: '', message: '' });
   };
 
-  const whatsappNumber = "+593999999999"; // Replace with actual number
+  const whatsappNumber = "+593997154016";
   const whatsappMessage = "Hola, me interesa conocer más sobre los servicios de integración de sistemas.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
