@@ -159,7 +159,7 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="inline-block">
-                <span className="text-sm font-semibold text-emerald-600 tracking-wide uppercase">Integración de Sistemas</span>
+                <span className="text-sm font-semibold text-blue-600 tracking-wide uppercase">Integración de Sistemas</span>
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Automatiza procesos y conecta tus sistemas críticos
@@ -171,7 +171,7 @@ const Home = () => {
                 <Button
                   onClick={() => document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })}
                   size="lg"
-                  className="bg-emerald-600 hover:bg-emerald-700 text-white text-lg px-8 py-6"
+                  className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-6"
                 >
                   Contáctame
                   <ArrowRight className="w-5 h-5 ml-2" />
@@ -180,7 +180,7 @@ const Home = () => {
                   onClick={() => window.open(whatsappLink, '_blank')}
                   size="lg"
                   variant="outline"
-                  className="border-2 border-gray-300 hover:border-emerald-600 text-lg px-8 py-6"
+                  className="border-2 border-gray-300 hover:border-blue-600 text-lg px-8 py-6"
                 >
                   <MessageSquare className="w-5 h-5 mr-2" />
                   WhatsApp
