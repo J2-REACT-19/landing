@@ -39,15 +39,13 @@ const Home = () => {
     e.preventDefault();
     try {
       const response = await axios.post(`${API}/contact`, formData);
-      toast({
-        title: "Mensaje enviado",
+      toast.success("Mensaje enviado", {
         description: "Gracias por contactarme. Te responderé pronto.",
       });
       setFormData({ name: '', email: '', company: '', message: '' });
     } catch (error) {
       console.error('Error sending contact message:', error);
-      toast({
-        title: "Error",
+      toast.error("Error al enviar", {
         description: "No se pudo enviar el mensaje. Intenta nuevamente.",
       });
     }
