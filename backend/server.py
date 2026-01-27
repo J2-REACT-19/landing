@@ -104,7 +104,7 @@ async def create_contact_message(contact: ContactMessageCreate):
         doc['created_at'] = doc['created_at'].isoformat()
         
         # Insert into MongoDB
-        result = await db.contact_messages.insert_one(doc)
+        _ = await db.contact_messages.insert_one(doc)
         
         # Log the contact message
         logger.info(f"New contact message from {contact_obj.email}")
