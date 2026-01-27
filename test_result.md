@@ -153,7 +153,6 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Implementar API de mensajes de contacto"
     - "Integración frontend con API de contacto"
   stuck_tasks: []
   test_all: false
