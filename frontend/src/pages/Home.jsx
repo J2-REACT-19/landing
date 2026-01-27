@@ -213,7 +213,7 @@ const Home = () => {
       <section id="servicios" className="py-20 px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-sm font-semibold text-emerald-600 tracking-wide uppercase">Servicios</span>
+            <span className="text-sm font-semibold text-blue-600 tracking-wide uppercase">Servicios</span>
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-4 mb-4">
               Soluciones empresariales completas
             </h2>
@@ -223,9 +223,9 @@ const Home = () => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="border-2 border-gray-100 hover:border-emerald-600 hover:shadow-lg transition-all duration-300">
+              <Card key={index} className="border-2 border-gray-100 hover:border-blue-600 hover:shadow-lg transition-all duration-300">
                 <CardHeader>
-                  <div className="w-16 h-16 bg-emerald-50 rounded-lg flex items-center justify-center text-emerald-600 mb-4">
+                  <div className="w-16 h-16 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600 mb-4">
                     {service.icon}
                   </div>
                   <CardTitle className="text-xl">{service.title}</CardTitle>
