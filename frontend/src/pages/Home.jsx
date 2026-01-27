@@ -32,14 +32,22 @@ const Home = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Mock submission
-    toast({
-      title: "Mensaje enviado",
-      description: "Gracias por contactarme. Te responderé pronto.",
-    });
-    setFormData({ name: '', email: '', company: '', message: '' });
+    try {
+      const response = await axios.post(`${API}/contact`, formData);
+      toast({
+        title: "Mensaje enviado",
+        description: "Gracias por contactarme. Te responderé pronto.",
+      });
+      setFormData({ name: '', email: '', company: '', message: '' });
+    } catch (error) {
+      console.error('Error sending contact message:', error);
+      toast({
+        title: "Error",
+        description: "No se pudo enviar el mensaje. Intenta nuevamente.",
+      });
+    }
   };
 
   const whatsappNumber = "+593997154016";
