@@ -1,12 +1,17 @@
 from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables
+ROOT_DIR = Path(__file__).parent
+load_dotenv(ROOT_DIR / '.env')
 
 # Email configuration
 conf = ConnectionConfig(
-    MAIL_USERNAME=os.environ.get('GMAIL_USER'),
-    MAIL_PASSWORD=os.environ.get('GMAIL_PASS'),
-    MAIL_FROM=os.environ.get('EMAIL_FROM'),
+    MAIL_USERNAME=os.environ.get('GMAIL_USER', ''),
+    MAIL_PASSWORD=os.environ.get('GMAIL_PASS', ''),
+    MAIL_FROM=os.environ.get('EMAIL_FROM', ''),
     MAIL_PORT=587,
     MAIL_SERVER="smtp.gmail.com",
     MAIL_STARTTLS=True,
