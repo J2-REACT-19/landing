@@ -100,11 +100,7 @@ const TechStackCategorized = () => {
       items: [
         {
           name: 'n8n',
-          logo: (
-            <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-pink-700 rounded-lg flex items-center justify-center text-white font-bold">
-              n8n
-            </div>
-          )
+          logo: <img src="/tech-logos/n8n.png" alt="n8n" className="w-10 h-10 object-contain" />
         },
         {
           name: 'ChatGPT',
