@@ -283,7 +283,7 @@ const Home = () => {
               Experiencia con tecnologías modernas y herramientas empresariales
             </p>
           </div>
-          <TechStack />
+          <TechStackCategorized />
         </div>
       </section>
 
