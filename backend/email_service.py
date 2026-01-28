@@ -33,12 +33,25 @@ async def send_contact_notification(contact_data: dict):
         duration=60  # 60 minutes
     )
     
-    # Email HTML template
+    # Email HTML template with inline logo
     html = f"""
     <html>
         <body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
             <div style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); padding: 30px; text-align: center; border-radius: 10px 10px 0 0;">
-                <h1 style="color: white; margin: 0;">Nuevo Mensaje de Contacto</h1>
+                <!-- J2Systems Logo SVG -->
+                <svg width="180" height="50" viewBox="0 0 240 70" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin: 0 auto 15px;">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#e0e7ff;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M 18 12 L 36 3 L 54 12 L 54 30 L 36 39 L 18 30 Z" fill="url(#logoGradient)"/>
+                    <text x="36" y="27" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#1d4ed8" text-anchor="middle">J2</text>
+                    <text x="65" y="30" font-family="Arial, sans-serif" font-size="28" font-weight="600" fill="white" letter-spacing="-0.5">Systems</text>
+                    <line x1="65" y1="37" x2="185" y2="37" stroke="white" stroke-width="2.5" opacity="0.3"/>
+                </svg>
+                <h1 style="color: white; margin: 10px 0 0 0;">Nuevo Mensaje de Contacto</h1>
             </div>
             
             <div style="background: #f9fafb; padding: 30px; border-radius: 0 0 10px 10px;">
