@@ -139,27 +139,15 @@ const TechStackCategorized = () => {
       items: [
         {
           name: 'Odoo',
-          logo: (
-            <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg flex items-center justify-center text-white font-bold text-lg">
-              O
-            </div>
-          )
+          logo: <img src="/tech-logos/odoo.png" alt="Odoo" className="w-10 h-10 object-contain" />
         },
         {
           name: 'Datil',
-          logo: (
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center text-white font-bold text-lg">
-              D
-            </div>
-          )
+          logo: <img src="/tech-logos/datil.png" alt="Datil" className="w-10 h-10 object-contain" />
         },
         {
           name: 'Contifico',
-          logo: (
-            <div className="w-10 h-10 bg-gradient-to-br from-green-600 to-green-800 rounded-lg flex items-center justify-center text-white font-bold text-lg">
-              C
-            </div>
-          )
+          logo: <img src="/tech-logos/contifico.png" alt="Contifico" className="w-10 h-10 object-contain" />
         }
       ]
     },
