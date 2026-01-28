@@ -26,12 +26,6 @@ async def send_contact_notification(contact_data: dict):
     """
     Send email notification when a new contact form is submitted
     """
-    # Create Google Calendar link
-    calendar_link = create_google_calendar_link(
-        title="Reunión con J2Systems",
-        description=f"Reunión agendada con {contact_data['name']} de {contact_data.get('company', 'su empresa')}",
-        duration=60  # 60 minutes
-    )
     
     # Email HTML template with inline logo
     html = f"""
@@ -66,16 +60,6 @@ async def send_contact_notification(contact_data: dict):
                 <div style="background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
                     <h3 style="color: #1f2937; margin-top: 0;">Mensaje:</h3>
                     <p style="color: #4b5563; line-height: 1.6;">{contact_data['message']}</p>
-                </div>
-                
-                <div style="text-align: center; margin-top: 30px;">
-                    <a href="{calendar_link}" 
-                       style="display: inline-block; background: #3b82f6; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px;">
-                        📅 Agendar Reunión con Google Calendar
-                    </a>
-                    <p style="color: #6b7280; font-size: 14px; margin-top: 15px;">
-                        Haz clic en el botón para agendar una reunión directamente en tu Google Calendar
-                    </p>
                 </div>
                 
                 <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
