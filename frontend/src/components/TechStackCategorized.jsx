@@ -152,23 +152,23 @@ const TechStackCategorized = () => {
       items: [
         {
           name: 'Stripe',
-          logo: <img src="/tech-logos/stripe.png" alt="Stripe" className="w-14 h-14 object-contain" />
+          logo: <img src="/tech-logos/stripe.png" alt="Stripe" className="w-16 h-16 object-contain" />
         },
         {
           name: 'PayPal',
-          logo: <img src="/tech-logos/paypal.jpg" alt="PayPal" className="w-14 h-14 object-contain bg-white rounded p-1" />
+          logo: <img src="/tech-logos/paypal.jpg" alt="PayPal" className="w-16 h-16 object-cover bg-white rounded p-2" />
         },
         {
           name: 'Payphone',
-          logo: <img src="/tech-logos/payphone.jpg" alt="Payphone" className="w-12 h-12 object-contain rounded" />
+          logo: <img src="/tech-logos/payphone.jpg" alt="Payphone" className="w-14 h-14 object-contain rounded" />
         },
         {
           name: 'Kushki',
-          logo: <img src="/tech-logos/kushki.png" alt="Kushki" className="w-12 h-12 object-contain" />
+          logo: <img src="/tech-logos/kushki.png" alt="Kushki" className="w-14 h-14 object-contain" />
         },
         {
           name: 'Nuvei',
-          logo: <img src="/tech-logos/nuvei.svg" alt="Nuvei" className="w-12 h-12 object-contain" />
+          logo: <img src="/tech-logos/nuvei.svg" alt="Nuvei" className="w-16 h-16 object-contain" />
         }
       ]
     },
