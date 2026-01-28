@@ -87,7 +87,7 @@ const TechStackCategorized = () => {
         },
         {
           name: 'FastAPI',
-          logo: <img src="/tech-logos/fastapi.svg" alt="FastAPI" className="w-16 h-16 object-contain" />
+          logo: <img src="/tech-logos/fastapi.svg" alt="FastAPI" className="w-10 h-10 object-contain" />
         }
       ]
     },
