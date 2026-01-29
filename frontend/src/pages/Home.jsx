@@ -7,6 +7,7 @@ import { toast } from 'sonner';
 import axios from 'axios';
 import Logo from '../components/Logo';
 import TechStackCategorized from '../components/TechStackCategorized';
+import ThemeToggle from '../components/ThemeToggle';
 import {
   ArrowRight,
   CheckCircle2,
