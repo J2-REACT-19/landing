@@ -304,8 +304,8 @@ const Home = () => {
               <Card key={index} className="border-2 border-gray-100 hover:shadow-xl transition-shadow overflow-hidden">
                 <CardHeader>
                   <div className="flex items-start gap-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center text-3xl flex-shrink-0 shadow-lg">
-                      {caseItem.logo}
+                    <div className="w-20 h-20 bg-white rounded-xl flex items-center justify-center flex-shrink-0 shadow-md overflow-hidden border border-gray-100">
+                      <img src={caseItem.logo} alt={caseItem.title} className="w-full h-full object-contain p-2" />
                     </div>
                     <div className="flex-1">
                       <CardTitle className="text-xl text-gray-900 mb-2">{caseItem.title}</CardTitle>
