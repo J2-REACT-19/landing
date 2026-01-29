@@ -124,28 +124,28 @@ const Home = () => {
 
   const cases = [
     {
-      title: "Empresa Exportadora de Banano",
-      description: "Sistema de gestión documental y monitoreo de contenedores en tiempo real",
-      result: "Reducción del 60% en tiempo de procesamiento de documentos",
-      logo: "🍌"
+      title: "Grobandeli - Banaexport",
+      description: "Sistema de gestión documental, monitoreo y tracking de contenedores en tiempo real.",
+      result: "Oferta de valor agregado y canal de CRM para que los clientes puedan ir gestionando su documentación y monitoreo de su contenedor.",
+      logo: "/case-logos/grobandeli.png"
     },
     {
-      title: "Proveedor de Servicios Web",
-      description: "Automatización completa: compra, pago con tarjeta, activación de servicios e integración con ERP",
-      result: "Procesamiento automático del 95% de las transacciones",
-      logo: "🌐"
+      title: "Ecuaweb",
+      description: "Automatización completa: Checkout, pago con tarjeta de crédito, activación de servicios, facturación electrónica e integración con el flujo de ERP.",
+      result: "Procesamiento automático del 100% de las transacciones y reducción de un 95% de carritos de compras abandonados.",
+      logo: "/case-logos/ecuaweb.png"
     },
     {
-      title: "Proveedor de Dominios",
-      description: "Consultoría y asesoría técnica especializada en arquitectura de sistemas",
-      result: "Optimización de infraestructura y reducción de costos operativos",
-      logo: "🔧"
+      title: "Ecuahosting",
+      description: "Automatización completa: Checkout, pago con tarjeta de crédito, activación de servicios, facturación electrónica e integración con el flujo de ERP.",
+      result: "Procesamiento automático del 100% de las transacciones y reducción de un 95% de carritos de compras abandonados.",
+      logo: "/case-logos/ecuahosting.png"
     },
     {
-      title: "Empresa de Logística",
-      description: "Integración de sistemas de tracking y facturación electrónica con ERP",
-      result: "Mejora del 80% en visibilidad de operaciones",
-      logo: "📦"
+      title: "ECUADORDOMAIN S.A.",
+      description: "Asesoría para mejores practicas de diseño de infraestructura y Capacitaciones.",
+      result: "Infraestructura estable, tolerante a fallos, resiliencia óptima.",
+      logo: "/case-logos/nicec.png"
     }
   ];
 
